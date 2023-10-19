@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem;
+}
+
+#header-search {
+  display: flex;
+}
+
+#header-search > input {
+  width: 10rem;
+  height: 2.5rem;
+  border: 2px solid #0a0a0a;
+  flex-shrink: 0;
+}
+
+#header-search > button {
+  width: 2.5rem;
+  height: 2.6rem;
+  background: #0a0a0a;
+  position: relative;
+  right: 40px;
+}
+
+.navbar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar > ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
