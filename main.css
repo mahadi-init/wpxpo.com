@@ -1,11 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* background: red; */
 }
 
 body {
   padding: 1rem;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-logos {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+}
+
+.social-logos > img {
+  background: #047ffa;
+  border-radius: 100%;
+  padding: 5px;
 }
 
 #header-search {
@@ -15,26 +36,80 @@ body {
 #header-search > input {
   width: 10rem;
   height: 2.5rem;
-  border: 2px solid #0a0a0a;
   flex-shrink: 0;
+  border: 2px solid #0a0a0a;
+  color: #838383;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+  letter-spacing: 0.005rem;
+  color: #838383;
 }
 
 #header-search > button {
   width: 2.5rem;
-  height: 2.6rem;
+  height: 2.5rem;
+  flex-shrink: 0;
   background: #0a0a0a;
-  position: relative;
-  right: 40px;
+  border: none;
+  outline: none;
+}
+
+#header-search > button > img {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
 }
 
 .navbar {
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  background: #0a0a0a;
+}
+
+.navbar > img {
+  padding: 0.5rem;
+  border: 1px solid #fff;
 }
 
 .navbar > ul {
-  list-style: none;
   display: flex;
-  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 1.5rem;
+  color: white;
+  padding: 1.5rem 1rem;
+  color: #fff;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.005rem;
+  text-transform: uppercase;
+}
+
+.navbar > ul > li > svg {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.navbar > button {
+  padding: 0.5rem 1.5rem;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-family: Oswald;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+  letter-spacing: 0.005rem;
+  text-transform: uppercase;
+  background: #047ffa;
 }
