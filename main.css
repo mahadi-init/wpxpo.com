@@ -228,16 +228,6 @@ main {
   color: white;
 }
 
-.second>p {
-  color: #0A0A0A;
-  font-family: Oswald;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 2.875rem;
-  text-transform: uppercase;
-}
-
 .second>div {
   margin-top: 20px;
   display: flex;
@@ -301,7 +291,7 @@ main {
   margin-top: 40px;
 }
 
-.third>p {
+.title-text {
   color: #0A0A0A;
   font-family: Oswald;
   font-size: 2rem;
@@ -311,6 +301,7 @@ main {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+
 
 .third>div {
   display: flex;
@@ -401,4 +392,88 @@ main {
   padding: 0.20388rem 0.14063rem 0.20394rem 0.14063rem;
   justify-content: center;
   align-items: center;
+}
+
+.fourth {
+  margin-top: 40px;
+  padding: 0 50px;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to right, #075eb6, rgb(23, 24, 43), #a609ce);
+  align-items: center;
+}
+
+.fourth>p {
+  color: #FFF;
+  font-family: Oswald;
+  font-size: 2.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.5rem;
+  letter-spacing: 0.00688rem;
+}
+
+.fourth>button {
+  display: flex;
+  padding: 0.875rem 1.25rem;
+  align-items: center;
+  gap: 0.5rem;
+  background: #047FFA;
+  border: none;
+  outline: none;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.001rem;
+}
+
+.fourth>div {
+  margin-top: 20px;
+  display: grid;
+}
+
+.fourth>div>img {
+  grid-column: 1;
+  grid-row: 1;
+  height: 8.8rem;
+}
+
+.fourth>div>img:nth-child(2) {
+  position: relative;
+  right: 50px;
+}
+
+.fourth>div>img:nth-child(3) {
+  position: relative;
+  right: 100px;
+}
+
+.fifth {
+  margin-top: 80px;
+}
+
+.fifth>div {
+  display: flex;
+  gap: 20px;
+}
+
+.fifth .big-container {
+  height: 30rem;
+  background: url("./public/images/fifth-bg-img.png");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.fifth .img-place1 {
+  width: 15rem;
+  height: 10rem;
+  flex-shrink: 0;
+  background: url('./public/images/fifth-sm1.png');
+  background-size: cover;
 }
